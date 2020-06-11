@@ -3,12 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>practise</groupId>
-    <artifactId>rule-assets</artifactId>
+    <artifactId>rules</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>rule-assets</name>
-
-
+    <packaging>kjar</packaging>
+    <name>rules</name>
     <properties>
         <apache-poi-version>3.13</apache-poi-version>
         <drools-version>7.4.1.Final</drools-version>
@@ -29,30 +27,14 @@
     </dependencyManagement>
 
     <dependencies>
+
+
         <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kie-api</artifactId>
+            <groupId>practise</groupId>
+            <artifactId>models</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-compiler</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-decisiontables</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-templates</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kie-internal</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -63,12 +45,7 @@
             <artifactId>poi-ooxml</artifactId>
             <version>${apache-poi-version}</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit-version}</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>

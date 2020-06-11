@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rules/rule-assets.iml" filepath="$PROJECT_DIR$/rules/rule-assets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/models/models.iml" filepath="$PROJECT_DIR$/models/models.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine/rule-engine.iml" filepath="$PROJECT_DIR$/engine/rule-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine/rulengine.iml" filepath="$PROJECT_DIR$/engine/rulengine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rules/rules.iml" filepath="$PROJECT_DIR$/rules/rules.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-drools-rule.iml" filepath="$PROJECT_DIR$/.idea/spring-drools-rule.iml" />
     </modules>
   </component>

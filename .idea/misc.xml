@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/rules/pom.xml" />
         <option value="$PROJECT_DIR$/engine/pom.xml" />
+        <option value="$PROJECT_DIR$/models/pom.xml" />
       </list>
     </option>
   </component>

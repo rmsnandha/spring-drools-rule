@@ -1,10 +1,12 @@
 package com.practise;
 
 import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.rule.FactHandle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import practise.model.Customer;
 
 @RestController
 public class Controller {
@@ -13,12 +15,13 @@ public class Controller {
     @Autowired
     KieSession kieSession;
 
-    @PostMapping("/patient")
-    public Patient orderNow(@RequestBody Patient patient) {
+    @PostMapping("/offer")
+    public Customer orderNow(@RequestBody Customer customer) {
 
-        System.err.println(kieSession.toString());
+        FactHandle insert = kieSession.insert(customer);
+        int i = kieSession.fireAllRules();
 
-        return patient;
+        return customer;
     }
 
 }
