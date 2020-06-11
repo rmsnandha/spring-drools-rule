@@ -1,0 +1,5 @@
+./.idea
+./engine/target/
+./engine/rule-engine.iml
+./rules/target/
+./rules/rule-assets.iml
